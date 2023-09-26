@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fixed Top Menu Bar</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Montserrat">
+</head>
+<body>
+
+    <!-- Fixed Top Menu Bar -->
+    <nav class="top-bar" id="top-bar">
+        <div class="logo-name">
+            <a href="index.html"><svg id="logo" class="logo" viewBox="0 0 155.45 261.18">
+                <path d="m115.05.02c-16.96,1.32-32.31,10.08-42.44,23.72-10.96,14.75-11.97,33.53-3.81,49.81,8.14,16.23,23.29,27.35,37.15,38.37s27.43,24.18,34.42,41.43c12.23,30.19,1.39,66.2-25.4,84.78-24.6,17.06-62.04,18.75-85.41-1.57-15.56-13.54-23.03-35.09-18.25-55.28,5.05-21.34,20.34-38.69,34.24-54.93l-8.36-2.21c13.69,43.65,27.38,87.29,41.07,130.94,1.78,5.68,9.18,4.1,9.82-1.33,4.92-41.66,9.89-83.34,15.22-124.95s12.15-81.95,17.26-123.07c.79-6.37-9.22-6.31-10,0-5.1,41.11-11.99,81.98-17.26,123.07s-10.3,83.29-15.22,124.95l9.82-1.33c-13.69-43.65-27.38-87.29-41.07-130.94-1.05-3.34-5.79-5.2-8.36-2.21-12.88,15.05-26.06,30.48-33.51,49.06-7.3,18.2-6.58,38.35,2.36,55.86,15.54,30.41,51.52,41.98,83.56,35.03,32.4-7.03,58.29-33.75,63.55-66.64,2.77-17.32-.16-34.69-8.2-50.28-8.65-16.77-22.43-28.95-37-40.46-16.33-12.9-36.64-28.74-36.01-51.79.58-21.33,21.56-38.46,41.82-40.04,6.37-.5,6.43-10.5,0-10h0Z"></path>
+                </svg>
+            </a>
+
+        <p class="name">Siiri Lietu</p>
+        </div>
+
+        <div class="nav-links-cta">
+        <div class="nav-links">
+            <a href="#">Me</a>
+            <a href="#">My work</a>
+            <a class="download-link" href="/images/Siiri_CV.pdf" download="SiiriCV">
+                <span class="nav-link-text">CV</span>
+                <svg class="cv-icon" viewBox="0 -960 960 960">
+                    <path d="M480-320 280-520l56-58 104 104v-326h80v326l104-104 56 58-200 200ZM240-160q-33-0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z"/>
+                </svg>
+            </a>
+        </div>
+
+        <button class="cta-button" onclick="location.href='#contact-section'" type="button">
+            Let's talk</button>
+        </div>
+    </nav>
+
+    <!-- <div class="line-container">
+        <svg class="line-animation" viewBox="0 0 1261 1440" fill="none" preserveAspectRatio="xMidYMax meet">
+        <path id="lineAnimation" d="M797.264 22.2466C851.198 12.4403 891.402 -10.8563 942.264 21.8022C993.344 54.601 1014.56 134.638 979.93 187.802C940.386 248.517 848.1 267.381 781.597 271.135C701.416 275.662 626.263 259.584 555.486 221.247C497.815 190.008 436.247 166.042 369.486 172.691C286.786 180.928 210.115 204.113 143.708 255.247C-2.76709 368.033 -12.4459 557.309 20.8192 724.691C36.878 805.495 69.8853 911.167 140.264 960.802C212.959 1012.07 289.204 975.835 337.93 908.247C353.079 887.234 369.081 858.006 355.486 832.247C331.835 787.435 278.789 796.331 243.041 819.024C124.158 894.496 77.3546 1070.06 101.708 1202.14C148.87 1457.9 478.025 1453.43 671.486 1414.91C738.908 1401.49 803.115 1381.53 865.819 1353.36C921.489 1328.35 979.856 1303.63 1041.49 1299.14C1136.65 1292.2 1210.29 1325.59 1255.26 1410.25" stroke="#FFF3EE" stroke-width="10" stroke-linecap="round"/>
+        </svg>
+    </div> -->
+
+    <section class="project-hero-section">
+        <!-- <div class="arrow-left">
+            <div class="arrow-top"></div>
+            <div class="arrow-bottom"></div>
+        </div> -->
+            
+        <div class="project-hero-heading">
+            <h1>Nomader</h1>
+            <h2>Landing page for a travel app</h2>
+        </div>
+            <img src="images/nomader-mockup.png">
+
+        <!-- <svg class="project-arrow-right" viewBox="0 0 72 126">
+            <path d="M14.0065 3.40779C11.0775 0.47884 6.32881 0.478813 3.39986 3.40773C0.470906 6.33664 0.470878 11.0854 3.39979 14.0143L53.129 63.7441L4.19187 112.679C1.26287 115.608 1.26277 120.357 4.19164 123.286C7.12051 126.215 11.8692 126.215 14.7982 123.286L68.5395 69.5469C71.0388 67.0478 71.4055 63.2236 69.6397 60.3355C69.2978 59.1687 68.6666 58.0686 67.7463 57.1482L14.0065 3.40779Z"/>
+            <path d="M3.39986 3.40773L3.0463 3.05417L3.0463 3.05417L3.39986 3.40773ZM14.0065 3.40779L13.6529 3.76134L13.6529 3.76134L14.0065 3.40779ZM3.39979 14.0143L3.04624 14.3679L3.04624 14.3679L3.39979 14.0143ZM53.129 63.7441L53.4825 64.0977C53.5763 64.0039 53.629 63.8767 53.629 63.7441C53.629 63.6115 53.5763 63.4843 53.4825 63.3905L53.129 63.7441ZM4.19187 112.679L3.83832 112.326L3.83832 112.326L4.19187 112.679ZM4.19164 123.286L3.83808 123.639L3.83808 123.639L4.19164 123.286ZM14.7982 123.286L14.4447 122.932L14.4447 122.932L14.7982 123.286ZM68.5395 69.5469L68.8931 69.9005L68.8931 69.9005L68.5395 69.5469ZM69.6397 60.3355L69.1599 60.4762C69.1723 60.5184 69.1902 60.5588 69.2131 60.5964L69.6397 60.3355ZM67.7463 57.1482L67.3927 57.5018L67.3927 57.5018L67.7463 57.1482ZM3.75341 3.76128C6.48709 1.02763 10.9192 1.02765 13.6529 3.76134L14.36 3.05424C11.2358 -0.0699743 6.17052 -0.0700037 3.0463 3.05417L3.75341 3.76128ZM3.75335 13.6608C1.01969 10.9271 1.01972 6.49494 3.75341 3.76128L3.0463 3.05417C-0.0779088 6.17835 -0.0779383 11.2437 3.04624 14.3679L3.75335 13.6608ZM53.4825 63.3905L3.75335 13.6608L3.04624 14.3679L52.7754 64.0976L53.4825 63.3905ZM4.54541 113.033L53.4825 64.0977L52.7754 63.3905L3.83832 112.326L4.54541 113.033ZM4.5452 122.932C1.81159 120.198 1.81168 115.766 4.54541 113.033L3.83832 112.326C0.714059 115.45 0.713953 120.515 3.83808 123.639L4.5452 122.932ZM14.4447 122.932C11.711 125.666 7.27881 125.666 4.5452 122.932L3.83808 123.639C6.9622 126.763 12.0275 126.764 15.1518 123.639L14.4447 122.932ZM68.186 69.1934L14.4447 122.932L15.1518 123.639L68.8931 69.9005L68.186 69.1934ZM69.2131 60.5964C70.8612 63.2919 70.5182 66.8613 68.186 69.1934L68.8931 69.9005C71.5594 67.2343 71.9498 63.1553 70.0663 60.0747L69.2131 60.5964ZM67.3927 57.5018C68.2523 58.3614 68.8409 59.3877 69.1599 60.4762L70.1195 60.1949C69.7546 58.9497 69.0809 57.7758 68.0998 56.7947L67.3927 57.5018ZM13.6529 3.76134L67.3927 57.5018L68.0998 56.7947L14.36 3.05424L13.6529 3.76134Z"/>
+        </svg> -->
+        <!-- <div class="arrow-right">
+            <div class="arrow-top"></div>
+            <div class="arrow-bottom"></div>
+          </div> -->
+    </section>
+
+    <section class="project-description">
+        <h2>an aspiring frontend developer.</h2>
+            
+        <p>I'm a Finnish multimedia design student looking for an <b>internship for spring 2024.</b>
+            <br><br>
+            I pride myself on my “I'll find out”-skills most of all, but I also have some knowledge 
+            in HTML, CSS and JavaScript. And soon in React!
+            <br><br>
+            I'm 32, lived in 4 countries, I'll buy you a coffee if you can guess them! 
+            I have previous international work experience and a bachelor degree in business administration
+            <br><br>
+            Jeg taler også dansk! Bare spørg mig ikke om at udtale rød grød med fløde. 
+            Medmindre du har brug for at grine. Det er også vigtigt. 
+            <br><br>
+            Dad jokes and bad jokes in general are close to my heart, and I think I must have heard all the Apple “Hey Siri” jokes, and I don't even mind</h2>
+        </p>
+            
+    </section>
+
+    <section class="work-section">
+        <h2>My other work</h2>
+        <br>
+        <section class="projects">
+            <a class="project-card hide-mobile" href="nomader.html">
+                <img src="images/nomader-mockup.png" alt="product mockup">
+                <h3>NOMADER</h3>
+                <p>AI Project - Landing page for a travel app</p>
+                <span class="hidden-box">
+                    <p>Designed in Figma using AI tools for ideation and content, implemented in HTML, CSS and JavaScript</p>
+                    <div class="project-buttons">
+                        <button class="project-button">Live site</button>
+                        <button class="project-button" onclick="document.location='nomader.html'">Read more</button>
+                    </div>
+                </span>
+            </a>
+
+            <div class="project-card">
+                <img src="images/agf-mockup.png" alt="product mockup">
+                <h3>AGF BASKETBALL</h3>
+                <p>Client Project - Website redesign</p>
+                <span class="hidden-box">
+                    <p>Designed in Figma, built in Wordpress, including some custom HTML, CSS and JavaScript</p>
+                    <div class="project-buttons">
+                        <button class="project-button">Live site</button>
+                        <button class="project-button">Read more</button>
+                    </div>
+                </span>
+            </div>
+
+            <div class="project-card">
+                <img src="images/takeawalk-mockup.png" alt="product mockup">
+                <h3>TAKE A WALK IN POBLENOU</h3>
+                <p>Exam Project - Website concept design</p>
+                <span class="hidden-box">
+                    <p>Individual project designing a concept in Figma, building it with HTML, CSS and JavaScript</p>
+                    <div class="project-buttons">
+                        <button class="project-button">Live site</button>
+                        <button class="project-button">Read more</button>
+                    </div>
+
+                </span>
+            </div>
+        </section>
+    </section>
+
+    <section class="contact-section" id="contact-section">
+        <h2>Am I the intern you're looking for?</h2>
+        <p>I'm always happy to grab a coffee and talk about it!</p>
+        <section class="contact-icons">
+
+            <section class="icon-box">
+                <svg class="contact-icon" viewBox="0 0 50 50">
+                    <path d="M3.65039 0H45.7715C47.7891 0 49.4258 1.59497 49.4258 3.56299V46.176C49.4258 48.1411 47.7891 49.738 45.7715 49.738H3.65039C1.63477 49.738 0 48.1421 0 46.176V3.56299C0 1.59595 1.63477 0 3.65039 0ZM9.91016 36.0552C10.5176 36.6665 11.248 36.9722 12.0996 36.9722H36.9004C37.752 36.9722 38.4824 36.6665 39.0898 36.0552C39.6973 35.4441 40 34.7092 40 33.8506V15.1216C40 14.7693 39.9492 14.438 39.8457 14.1274C39.6992 13.6809 39.4473 13.2776 39.0898 12.917C38.9512 12.7778 38.8066 12.6545 38.6562 12.5471C38.1445 12.1824 37.5586 12 36.9004 12H12.0996C11.248 12 10.5176 12.3057 9.91016 12.917C9.30273 13.5283 9 14.2632 9 15.1216V33.8506C9 34.1865 9.04688 34.5034 9.13867 34.8013C9.2832 35.2651 9.54102 35.6831 9.91016 36.0552ZM12.0996 18.2432L24.5 26.0469L36.9004 18.2432V33.8506H12.0996V18.2432ZM36.9004 15.1216L24.5 22.9253L12.0996 15.1216H36.9004Z"/>
+                </svg>
+                    
+                <p class="contact-text">siiri.lietu@gmail.com</p>
+            </section>
+
+            <section class="icon-box">
+                <svg class="contact-icon" viewBox="0 0 50 50">
+                    <path d="M3.65039 0H45.7715C47.7891 0 49.4258 1.59497 49.4258 3.56299V46.176C49.4258 48.1411 47.7891 49.738 45.7715 49.738H3.65039C1.63477 49.738 0 48.1421 0 46.176V3.56299C0 1.59595 1.63477 0 3.65039 0ZM27.5566 37.6536C31.0586 39.2178 34.6035 40 38.1914 40C38.709 40 39.1387 39.8279 39.4824 39.4834C39.8281 39.1389 40 38.7083 40 38.1917V31.2166C40 30.8435 39.8711 30.5063 39.6133 30.2048C39.3535 29.9036 39.0234 29.6953 38.623 29.5806L32.6797 28.375C32.2793 28.3176 31.8691 28.3535 31.4531 28.4827C31.3398 28.5176 31.2324 28.5574 31.1309 28.6018C30.8594 28.7217 30.6289 28.8757 30.4414 29.064L26.3945 33.1111C25.3027 32.4797 24.2695 31.7834 23.2949 31.0229C22.3184 30.2622 21.3848 29.437 20.4961 28.5471C19.5488 27.6287 18.6797 26.6743 17.8906 25.6841C17.5273 25.2278 17.1855 24.7639 16.8672 24.2922C16.4961 23.7402 16.1562 23.178 15.8457 22.6055L20.0215 18.3862C20.252 18.1565 20.4102 17.8838 20.4961 17.5681C20.5391 17.4124 20.5625 17.2393 20.5703 17.0488C20.5781 16.8528 20.5684 16.6384 20.5391 16.4055L19.4199 10.3777C19.3613 10.0046 19.1758 9.68164 18.8594 9.40894C18.5449 9.13623 18.1855 9 17.7832 9H10.8086C10.291 9 9.86133 9.17212 9.51758 9.5166C9.38086 9.65283 9.27148 9.80249 9.18945 9.96558C9.0625 10.2151 9 10.4961 9 10.8083C9 14.3962 9.78125 17.9412 11.3457 21.4431C12.9102 24.9448 15.1289 28.1311 17.998 31.0015C20.8691 33.8718 24.0547 36.0891 27.5566 37.6536ZM17.0508 16.4917L14.209 19.3333C13.7227 18.2139 13.3477 17.0801 13.0898 15.9319C12.832 14.7837 12.6309 13.6213 12.4883 12.4443H16.3203L17.0508 16.4917ZM33.0469 35.9097C31.8848 35.6228 30.7422 35.2351 29.623 34.7473L32.5078 31.8625L36.5547 32.6807V36.4695C35.3789 36.3833 34.209 36.1968 33.0469 35.9097Z"/>
+                    </svg>
+                    
+                <p class="contact-text">42464737</p>
+            </section>
+
+            <section class="icon-box">
+                <svg class="contact-icon" viewBox="0 0 50 51">
+                <path d="M27.0715 23.1009V23.0239C27.0555 23.0499 27.0385 23.0759 27.0215 23.1009H27.0715Z"/>
+                <path d="M46.2651 0.666992H4.14514C2.12914 0.666992 0.494141 2.26299 0.494141 4.22999V46.843C0.494141 48.809 2.12914 50.405 4.14514 50.405H46.2651C48.2841 50.405 49.9191 48.808 49.9191 46.843V4.22999C49.9191 2.26199 48.2831 0.666992 46.2651 0.666992ZM15.4751 42.304H8.01014V19.845H15.4751V42.304ZM11.7431 16.777H11.6931C9.18914 16.777 7.56914 15.052 7.56914 12.897C7.56914 10.694 9.23914 9.01699 11.7921 9.01699C14.3461 9.01699 15.9171 10.694 15.9671 12.897C15.9671 15.052 14.3451 16.777 11.7431 16.777ZM42.3941 42.304H34.9291V30.286C34.9291 27.268 33.8491 25.208 31.1481 25.208C29.0861 25.208 27.8581 26.597 27.3171 27.939C27.1201 28.418 27.0721 29.088 27.0721 29.76V42.303H19.6071C19.6071 42.303 19.7051 21.949 19.6071 19.844H27.0721V23.023C28.0641 21.493 29.8381 19.314 33.8011 19.314C38.7121 19.314 42.3951 22.525 42.3951 29.424L42.3941 42.304Z"/>
+                </svg>
+                <p class="contact-text">Connect on LinkedIn</p>
+            </section>
+        </section>
+        <p>And remember, coffee is on me if you guess those 4 countries I've lived in 😉</p>
+    </section>
+
+</body>
+</html>
