@@ -311,8 +311,9 @@
             transition: opacity 1s, transform 5s;
             margin-bottom: 1rem;
         }
-/* 
-        .work-section {
+
+    /* RECENT WORK SECTION FOR PROJECT PAGES */
+        .work-section-carousel {
             width:100%;
             height:fit-content;
             background-color:var(--lighter-pink);
@@ -320,7 +321,7 @@
             z-index:4;
         }
 
-        .work-section h2 {
+        .work-section-carousel h2 {
             text-align: center;
             margin-top:0;
             padding-top:10vh;
@@ -330,7 +331,7 @@
         }
 
 
-        .projects {
+        .projects-carousel {
             display:flex;
             justify-content: space-between;
             margin: 3vh 5vw 0vw 5vw;
@@ -338,7 +339,7 @@
             z-index:9;
         }
 
-        .project-card {
+        .project-card-carousel {
             display:flex;
             flex-direction: column;
             align-items:center;
@@ -352,38 +353,38 @@
             margin:0vw;
         }
 
-        .hide-project {
+        .hide-project-carousel {
             display:none;
         }
 
-        .project-card:hover{
+        .project-card-carousel:hover{
             transform: scale(1.04);
         }
 
-        .project-card:hover .hidden-box{
+        .project-card-carousel:hover .hidden-box{
             display:block;
         }
 
-        .project-card img {
+        .project-card-carousel img {
             width:26vw;
             height:auto;
         }
 
-        .project-card h3 {
+        .project-card-carousel h3 {
             font-family: var(--body-font);
             font-size: 1.5rem;
             margin-top:5vh;
             margin-bottom:0vh;
         }
 
-        .project-card p {
+        .project-card-carousel p {
             font-family: var(--body-font);
             font-size: 1rem;
             margin:1vh;
         }
         
 
-        .hidden-box {
+        .hidden-box-carousel {
             padding-top:1vh;
             color: var(--dark-brown);
             font-family: var(--body-font);
@@ -391,14 +392,14 @@
             display:none;
         }
 
-        .hidden-box p {
+        .hidden-box-carousel p {
             color: var(--dark-brown);
             font-family: var(--body-font);
             width: 24vw;
             font-size: 0.8rem;
             padding-bottom:1rem;
         } 
-         */
+        
 
          .work-section {
             width:100%;
