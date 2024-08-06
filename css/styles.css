@@ -5,7 +5,7 @@
     --lighter-pink: #FFF4F8;
     --light-blue: #8DAEF3;
     --dark-blue: #324CBD;
-    --off-white: #FFF6F3;
+    --off-white: rgb(255, 253, 254, 1);
     --light-purple: #EFE0F3;
     --dark-brown: #553933;
     --heading-font: "Montserrat"; 
@@ -205,12 +205,23 @@
             display: block;
           }
 
+        .parallax {
+            position:relative;
+            width:100%;
+            height:100%;
+        }
+
         .hero-section {
             height: 58vh;
             width:100%;
             background-color: var(--light-pink);
             position:relative;
             display:flex;
+        }
+
+        .hero-section-content {
+            padding-left: 10vw;
+            padding-right:10vw;
         }
 
         .hero-section h1 {
@@ -230,16 +241,28 @@
 
         .hero-text {
             position:absolute;
-            padding: 34vh 0vh 0vw 10vw;
+            padding: 34vh 0vh 0vw 0vw;
+        }
+
+        
+        .portrait {
+            height:90vh;
+            width:auto;
+            margin-left:50vw;
+            margin-top:10vh;
+            z-index:3;
+            overflow: hidden;
+            position: absolute;
         }
 
         .me-section {
-            height:85vh;
+            height: 85vh;
             width:100%;
             background-color: var(--main-red);
             position:relative;
             margin-top:0;
             z-index:0;
+            padding-bottom:5vh;
         }
 
         .me-section h2 {
@@ -288,7 +311,7 @@
             transition: opacity 1s, transform 5s;
             margin-bottom: 1rem;
         }
-
+/* 
         .work-section {
             width:100%;
             height:fit-content;
@@ -304,22 +327,6 @@
             font-size: 2.5rem;
             font-family: var(--body-font);
             color:var(--main-red);
-        }
-
-        .portrait {
-            height:90vh;
-            width:auto;
-            margin-left: 60vw;
-            margin-top:10vh;
-            z-index:3;
-            overflow: hidden;
-            position: absolute;
-        }
-
-        .parallax {
-            position:relative;
-            width:100%;
-            height:100%;
         }
 
 
@@ -339,7 +346,6 @@
             transition: transform 0.3s ease;
             color:var(--dark-brown);
             z-index:9;
-            /* background: rgba(255, 246, 243, .75); */
             height:60vh;
             text-decoration:none;
             width:100%;
@@ -391,13 +397,79 @@
             width: 24vw;
             font-size: 0.8rem;
             padding-bottom:1rem;
+        } 
+         */
+
+         .work-section {
+            width:100%;
+            height:fit-content;
+            position:relative;
+            z-index:5;
+            background-color: var(--lighter-pink);
         }
-        
-        .project-buttons {
-            display:flex;
-            justify-content: center;
+         
+         .work-section h2 {
+            text-align: center;
+            margin-top:0;
+            padding-top:10vh;
+            font-size: 2.5rem;
+            font-family: var(--body-font);
+            color:var(--main-red);
         }
 
+        .project-card {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            padding:3vh 10vw 5vh 10vw;
+            height: 45vh;
+            background-color: var(--lighter-pink);
+        }
+
+        .project-card-right {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            padding:3vh 10vw 5vh 10vw;
+            height:45vh;
+            background-color: var(--lighter-pink);
+            margin-top:5vh;
+            background-color: var(--light-pink);
+        }
+
+        /* .project-card:hover {
+            background-color: rgb(255, 253, 254, 0.5);;
+        } */
+
+         .project-card p, .project-card-right p {
+            color: var(--dark-brown);
+            font-family: var(--body-font);
+            width: 30vw;
+            font-size: 1rem;
+            padding-bottom:1rem;
+        } 
+
+        .project-card h3, .project-card-right h3 {
+            color:var(--dark-brown);
+            font-family: var(--body-font);
+            font-size: 1.5rem;
+            margin-bottom:0vh;
+            margin-top:0vh;
+        }
+
+        .project-card-description {
+            margin-left:8vw;
+        }
+
+        .project-card-description-right {
+            margin-right:8vw;
+        }
+
+        .project-buttons {
+            display:flex;
+            justify-content: left;
+        }
+        
         .project-button {
             background-color: var(--main-red);
             color: var(--off-white);
@@ -410,17 +482,21 @@
             padding: 0.5rem 1rem;
             transition: color 0.3s, background-color 0.3s;
             text-decoration:none;
-            margin: 0.5rem;
+            margin: 0rem 0.5rem 0rem 0rem;
         }
 
         .project-button:hover {
             opacity:75%;
         }
 
+
+
+        /* Recommendations section */
+
         .recommendations-section {
             max-width:100%;
             height:45vh;
-            background-color: var(--light-pink);
+            background-color: var(--lighter-pink);
             text-align: center;
             padding: 5vh;
         }
@@ -461,7 +537,7 @@
         
         .contact-section {
             width:100%;
-            background-color: #FFF9EB;
+            background-color: var(--light-pink);
             position:relative;
             z-index:3;
             display: flex;

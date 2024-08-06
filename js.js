@@ -7,12 +7,12 @@
         window.addEventListener('scroll', function () {
         
 // Calculate the position of the portrait relative to the scroll position
-        var scrollY = window.scrollY;
-        var portraitPosition = scrollY;
-        var heroTextPosition = scrollY;
+        let scrollY = window.scrollY;
+        let portraitPosition = scrollY;
+        let heroTextPosition = scrollY;
         
-        // Calculate the maximum position where the portrait should stop
-        var maxPosition = meSection.offsetTop + meSection.offsetHeight - 35 - portrait.offsetHeight;
+// Calculate the maximum position where the portrait should stop
+        let maxPosition = meSection.offsetTop + meSection.offsetHeight - 35 - portrait.offsetHeight;
     
         // Limit the portrait's position to the maximum position
         if (portraitPosition > maxPosition) {
@@ -26,7 +26,7 @@
 
         //Open mobile navigation menu
         function openMenu() {
-            var x = document.getElementById("myLinks");
+            let x = document.getElementById("myLinks");
             if (x.style.display === "block") {
                 x.style.display = "none";
             } else {
@@ -36,12 +36,12 @@
 
         // Close the mobile menu
         function closeMenu() {
-        var x = document.getElementById("myLinks");
+        const x = document.getElementById("myLinks");
         x.style.display = "none";
         }
 
         // Attach the click event to all links in the mobile menu
-        var mobileMenuLinks = document.querySelectorAll("#menuColumn a");
+        const mobileMenuLinks = document.querySelectorAll("#menuColumn a");
         for (var i = 0; i < mobileMenuLinks.length; i++) {
         mobileMenuLinks[i].addEventListener("click", closeMenu);
         }

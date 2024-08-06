@@ -9,7 +9,7 @@ $(document).ready(function(){
 
 //Open mobile navigation menu
         function openMenu() {
-            var x = document.getElementById("myLinks");
+            let x = document.getElementById("myLinks");
             if (x.style.display === "block") {
                 x.style.display = "none";
             } else {
@@ -19,12 +19,12 @@ $(document).ready(function(){
 
 // JavaScript function to close the mobile menu
         function closeMenu() {
-        var x = document.getElementById("myLinks");
+        let x = document.getElementById("myLinks");
         x.style.display = "none";
         }
 
         // Attach the click event to all links in the mobile menu
-        var mobileMenuLinks = document.querySelectorAll("#menuColumn a");
+        const mobileMenuLinks = document.querySelectorAll("#menuColumn a");
         for (var i = 0; i < mobileMenuLinks.length; i++) {
         mobileMenuLinks[i].addEventListener("click", closeMenu);
 }
