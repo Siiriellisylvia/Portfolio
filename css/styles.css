@@ -311,8 +311,15 @@
             transition: opacity 1s, transform 5s;
             margin-bottom: 1rem;
         }
+/* RECENT WORK SECTION FOR PROJECT PAGES */
 
-    /* RECENT WORK SECTION FOR PROJECT PAGES */
+        .projects-carousel {
+            display:flex;
+            flex-direction: row;
+            padding: 2vh;
+            margin:0;
+            }
+            
         .work-section-carousel {
             width:100%;
             height:fit-content;
@@ -349,7 +356,6 @@
             z-index:9;
             height:60vh;
             text-decoration:none;
-            width:100%;
             margin:0vw;
         }
 
@@ -361,7 +367,7 @@
             transform: scale(1.04);
         }
 
-        .project-card-carousel:hover .hidden-box{
+        .project-card-carousel:hover .hidden-box-carousel{
             display:block;
         }
 
@@ -502,17 +508,25 @@
             padding: 5vh;
         }
 
+		.recommendations-section-me {
+            max-width:100%;
+            height:45vh;
+            background-color: var(--light-pink);
+            text-align: center;
+            padding: 5vh;
+        }
+
         .recommendations-content {
             background: url(quotation-mark-1.svg) left top no-repeat, url(quotation-mark.svg) right bottom no-repeat;
             height:45vh;
         }
 
-        .recommendations-section h2 {
+        .recommendations-section, .recommendations-section-me h2 {
             margin:0;
             padding:5vh;
         }
 
-        .recommendations-section h3 {
+        .recommendations-section, .recommendations-section-me h3 {
             font-family: var(--body-font);
             color:var(--dark-brown);
             font-size: 1.3rem;
@@ -520,7 +534,7 @@
             padding:2vh 0vh 0vh 0vh;
         }
 
-        .recommendations-section p {
+        .recommendations-section, .recommendations-section-me p {
             font-family: var(--body-font);
             color:var(--dark-brown);
             font-size: 1.3rem;
@@ -642,10 +656,12 @@
         }
 
         .me-description {
-            height: 100vh;
+            height: fit-content;
             width:100%;
-            background-color: var(--lighter-pink);
             margin:0;
+            background-color: var(--lighter-pink);
+          	padding-bottom:1rem;
+          	padding-top:1rem;
         }
 
         .me-description-content {
